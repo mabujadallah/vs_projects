@@ -1,0 +1,38 @@
+/* Custom properties for better performance */
+:root {
+    --transition-speed: 0.3s;
+    --primary-color: #2563eb;
+    --text-dark: #374151;
+    --text-light: #9CA3AF;
+}
+
+/* Critical CSS first */
+.nav-link {
+    @apply text-gray-600 hover:text-blue-600 dark:text-gray-300 dark:hover:text-blue-400;
+    transition: color var(--transition-speed) ease;
+}
+
+/* Optimize animations */
+[data-aos] {
+    opacity: 0;
+    transition: opacity var(--transition-speed) ease-out;
+    will-change: opacity;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Hardware acceleration for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Add print styles */
+@media print {
+    .nav-link, #theme-toggle {
+        display: none;
+    }
+}

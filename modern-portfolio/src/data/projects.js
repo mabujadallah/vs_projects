@@ -1,0 +1,24 @@
+const projects = [
+  {
+    title: "Project One",
+    description: "A brief description of Project One.",
+    link: "https://github.com/username/project-one"
+  },
+  {
+    title: "Project Two",
+    description: "A brief description of Project Two.",
+    link: "https://github.com/username/project-two"
+  },
+  {
+    title: "Project Three",
+    description: "A brief description of Project Three.",
+    link: "https://github.com/username/project-three"
+  },
+  {
+    title: "Project Four",
+    description: "A brief description of Project Four.",
+    link: "https://github.com/username/project-four"
+  },
+];
+
+export default projects;

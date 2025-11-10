@@ -1,0 +1,35 @@
+You are my coding assistant. 
+I want to build a modern personal portfolio website using **React + Tailwind CSS**.
+
+Follow these instructions carefully:
+
+1. **Project setup:**
+   - Use Vite or Create React App to initialize the project.
+   - Install Tailwind CSS and configure it properly.
+   - Create a clean folder structure: `/components`, `/pages`, `/assets`, `/styles`.
+
+2. **Website structure:**
+   - Home section: my name, short tagline, and profile image.
+   - About section: short bio with skills and research interests.
+   - Projects section: a responsive grid of cards (title, short description, link).
+   - Research/Publications section: list of academic papers or studies.
+   - Contact section: form (name, email, message) + social media links.
+
+3. **Design guidelines:**
+   - Use Tailwind for layout and spacing.
+   - Smooth scroll between sections.
+   - Responsive design for mobile, tablet, and desktop.
+   - Light/dark mode toggle.
+   - Add fade-in or slide-up animations when scrolling.
+
+4. **Extra features (optional):**
+   - Typewriter effect for tagline.
+   - Download CV button.
+   - Simple routing (React Router or Next.js pages if using Next.js).
+
+5. **Output:**
+   - Write clean, well-commented React code.
+   - Include placeholder text and dummy data I can replace later.
+   - When unsure about content, add a `TODO:` comment.
+
+Now start coding step by step — first, generate the project folder structure and base files (App.jsx, index.css, main.jsx, components/).

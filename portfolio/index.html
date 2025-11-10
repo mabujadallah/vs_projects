@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing my work and skills">
+    <title>My Portfolio</title>
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" as="style">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" as="script">
+    
+    <!-- Stylesheet loading -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<!-- Add dark class based on user preference -->
+<body class="bg-gray-50 dark:bg-gray-900" data-theme="light">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-sm dark:bg-gray-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-gray-800 dark:text-white">Portfolio</a>
+                <div class="flex space-x-4">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button id="theme-toggle" class="p-2">🌓</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center">
+        <div class="text-center">
+            <img src="https://via.placeholder.com/150" class="rounded-full mx-auto mb-4" alt="Profile">
+            <h1 class="text-4xl font-bold mb-2">Your Name</h1>
+            <div id="typed-strings">
+                <span>Researcher</span>
+                <span>AI Enthusiast</span>
+                <span>Developer</span>
+            </div>
+            <span id="typed" class="text-xl text-blue-600"></span>
+        </div>
+    </section>
+
+    <!-- Other sections... -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">About Me</h2>
+            <p class="text-lg">Your bio goes here...</p>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project cards will be added here via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">Contact Me</h2>
+            <form class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <input type="text" placeholder="Name" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email" class="w-full p-2 border rounded">
+                </div>
+                <div class="mb-4">
+                    <textarea placeholder="Message" class="w-full p-2 border rounded" rows="4"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Load scripts at the end -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
+    <script src="js/main.js" type="module" defer></script>
+</body>
+</html>
